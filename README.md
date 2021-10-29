@@ -18,5 +18,15 @@ this is a file to deploy contracts when writing unit tests
 this is a file to define all contract types.
 
 ## Hint to enable Coverage
-`hardhat-coverage` doesn't work with `hardhat-deploy` saying Error: No deployment found for: {Contract Name} because of issue of hardhat-deploy here.
-to enable coverage, please fix `node_modules/solidity-coverage/plugins/resources/nomiclabs.utils.js` file like [this](https://github.com/wighawag/hardhat-deploy/issues/132#issuecomment-875365555).
+`hardhat-coverage` doesn't work with `hardhat-deploy` saying Error: No deployment found for: {Contract Name} <br />
+To enable coverage, please fix `node_modules/solidity-coverage/plugins/resources/nomiclabs.utils.js` file. <br />
+You should replace codes (L136-L141) with below codes
+
+```
+env.network.name = networkName;
+env.network.config = networkConfig;
+env.network.provider = provider;
+env.network.isHardhatEVM = isHardhatEVM;
+```
+
+You can reference this in detail [here](https://github.com/wighawag/hardhat-deploy/issues/132#issuecomment-875365555).
