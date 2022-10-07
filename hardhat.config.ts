@@ -10,6 +10,8 @@ import 'hardhat-gas-reporter';
 import { HardhatUserConfig } from 'hardhat/types';
 import { task } from 'hardhat/config';
 
+require('dotenv').config();
+
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
 task('accounts', 'Prints the list of accounts', async (taskArgs, hre) => {
@@ -56,7 +58,8 @@ export default {
     currency: 'USD',
     gasPrice: 21,
   },
-  etherscan: {
+  
+  : {
     apiKey: process.env.ETHERSCAN_API_KEY,
   },
 } as HardhatUserConfig;
