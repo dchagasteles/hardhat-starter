@@ -1,6 +1,7 @@
 import '@typechain/hardhat';
 import '@nomiclabs/hardhat-ethers';
 import '@nomiclabs/hardhat-waffle';
+import '@nomiclabs/hardhat-etherscan';
 import 'hardhat-deploy';
 import 'solidity-coverage';
 import 'hardhat-contract-sizer';
@@ -54,5 +55,8 @@ export default {
   gasReporter: {
     currency: 'USD',
     gasPrice: 21,
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API_KEY,
   },
 } as HardhatUserConfig;
