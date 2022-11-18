@@ -48,6 +48,7 @@
     "@openzeppelin/contracts": "^4.4.0",
     "@typechain/hardhat": "^2.3.0",
     "solhint": "^3.3.6",
+    "dotenv": "^16.0.3",
     "ts-generator": "^0.1.1"
   }
 }
