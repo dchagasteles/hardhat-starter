@@ -58,8 +58,4 @@ export default {
     currency: 'USD',
     gasPrice: 21,
   },
-  
-  : {
-    apiKey: process.env.ETHERSCAN_API_KEY,
-  },
 } as HardhatUserConfig;
