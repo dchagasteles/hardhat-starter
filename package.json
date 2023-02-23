@@ -5,7 +5,8 @@
   "scripts": {
     "coverage": "npx hardhat coverage",
     "test": "npx hardhat test",
-    "prettier:solidity": "npx prettier --write contracts/**/*.sol"
+    "prettier:solidity": "npx prettier --write contracts/**/*.sol",
+    "set-foundry-test-env": "git submodule update --init --recursive"
   },
   "repository": {
     "type": "git",
