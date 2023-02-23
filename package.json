@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "@chainlink/contracts": "^0.4.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.6",
     "@openzeppelin/contracts": "^4.8.0",
     "@typechain/hardhat": "^2.3.0",
     "dotenv": "^16.0.1",
